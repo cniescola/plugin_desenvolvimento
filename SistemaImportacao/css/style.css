@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700;800;900&display=swap');
+
+*{
+	margin:0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+}
+
+body{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:100vh;
+	background: white !important;
+}
+
+/* configurando nav */
+.navigation{
+	position:fixed;
+	height: 100%;
+	width:70px;
+	background: #2b343b;
+	box-shadow: 10px 0 0 #4187f6;
+	border-left: 10px solid #2b343b;
+	overflow-x: hidden;
+	transition:width 0.5s;
+	left: 0;
+	z-index: 100;
+	overflow: hidden;
+}
+
+.navigation:hover{
+	width:300px;
+}
+
+.navigation ul{
+	position:absolute;
+	top:0;
+	left:0;
+	width: 100%;
+	padding-left:5px;
+	padding-top:40px;
+}
+
+.navigation ul li{
+	position:relative;
+	list-style:none;
+	width:100%;
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+}
+
+.navigation ul li.active{
+	background: #4187f6;
+}
+
+
+.navigation ul li a{
+	position:relative;
+	display:block;
+	width:100%;
+	display:flex;
+	text-decoration:none;
+	color:#fff;
+}
+
+.navigation ul li.active a::before{
+	content:'';
+	position:absolute;
+	top:-30px;
+	right:0;
+	width:30px;
+	height:30px;
+	background:#2b343b;
+	border-radius: 50%;
+	box-shadow: 15px 15px 0 #4187f6;
+}
+
+.navigation ul li.active a::after{
+	content:'';
+	position:absolute;
+	bottom:-30px;
+	right:0;
+	width:30px;
+	height:30px;
+	background:#2b343b;
+	border-radius: 50%;
+	box-shadow: 15px -15px 0 #4187f6;
+}
+
+.navigation ul li a .icon{
+	position:relative;
+	display:block;
+	min-width:60px;
+	height:60px;
+	line-height:70px;
+	text-align:center;
+}
+
+.navigation ul li a .icon ion-icon{
+	position:relative;
+	font-size:1.5em;
+	z-index:1;
+}
+
+.navigation ul li a .title{
+	position:relative;
+	display:block;
+	padding-left: 10px;
+	height:60px;
+	line-height:60px;
+	white-space:nowrap;
+}
+
+/* --progress bar */
+/*progress Bar*/
+.header_top .content4{
+	position:relative;
+	width:39.682539682539684vw;
+	height: 80%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+
+.header_top .content4 .skills{
+	position:relative;
+	display:flex;
+	border-radius:0.6349206349206349vw;
+	overflow: hidden;
+	transition:0.5s;
+	min-width: 46vw;
+}
+
+.header_top .content4 .skills::before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: 50%;
+	background:rgba(255,255,255,.1);
+	z-index:10;
+}
+
+.header_top .content4 .skills .Name{
+	position:relative;
+	width:8.73015873015873vw;
+	text-align:right;
+	color:black;
+	margin-top:-0.15873015873015872vw;
+	text-transform:uppercase;
+	font-size: 1.2vw;
+
+}
+.header_top .content4 .skills .Value{
+	position:relative;
+	width:3.1746031746031744vw;
+	text-align:left;
+	color:black;
+	margin-top:-0.15873015873015872vw;
+	text-transform:uppercase;
+	font-size: 1.2vw;
+
+}
+
+.header_top .content4 .skills .percent{
+	position:relative;
+	width:calc(100% - 11.9047619047619vw);
+	height:1.5873015873015872vw;
+	margin: 0 0.7936507936507936vw;
+	border-radius:0.7936507936507936vw;
+	background: #151515;
+	box-shadow: inset 0 0  0.7936507936507936vw #000;
+	overflow: hidden;
+}
+
+.header_top .content4 .skills .percent .progress{
+	position:relative;
+	top:0;
+	left:0;
+	width: 70%;
+	height: 100%;
+	border-radius:0.7936507936507936vw;
+	background:#50ae55;
+	box-shadow: inset 0 0 0.15873015873015872vw #000;
+	animation: animateprogress 1s ease-in-out forwards;
+}
+
+:root {
+	--largura-bg: 0%;
+}
+
+@keyframes animateprogress{
+	from{
+		width: var(--largura-bg);
+	}
+}
+
+/* --progress bar */
+
+/* configurando nav */
+
+/* configurando painel */
+.painel{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	padding-left: 70px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items:left;
+}
+
+.container1{
+    height: 100%;
+    width:100%;
+    background-color: #e0e8f5;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding:2.5vw;
+	overflow: hidden;
+}
+
+
+.header_top{
+	width: 100%;
+	min-height: 54px;
+    height: 5vw;
+    background: white;
+    box-shadow: 0.07320644216691069vw 0.07320644216691069vw 0.36603221083455345vw #0000004f;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3.9vw 0 2vw;
+	z-index: 1;
+}
+
+.header_top > h1{
+	font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #6d6464;
+    text-transform: uppercase;
+    font-size: 1.4641288433382138vw;
+    padding: 0;
+    margin: 0;
+}
+
+p.titulo_green{
+	font-size: 1.5vw;
+    background: #50ae55;
+    width: 100%;
+    height: 4vw;
+	min-height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    margin-bottom: 3vw;
+	font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+/* configurando painel */

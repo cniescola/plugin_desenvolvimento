@@ -1,0 +1,222 @@
+body{
+    background-color:#e0e8f5;
+}
+/* Header Topo */
+header{
+    width: 100%;
+    height: 5vw;
+    background-color:white;
+    box-shadow: 1px 1px 1px #00000061;
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    justify-content: space-between;
+}
+
+header #titulo h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #6d6464;
+    text-transform: uppercase;
+    font-size: 1.4641288433382138vw;
+    margin: 0;
+}
+
+header #titulo{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+}
+
+/* Header Topo */
+
+/* Section Meio */
+
+section{
+    width: 100%;
+    height: 89vh;
+    display: flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items:center;
+}
+
+section > div{
+    width: 50%;
+    height:100%;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    padding:1vw;
+}
+
+section #squad2 h1.titulo,
+section #squad1 h1.titulo{
+    color: white;
+    font-size: 1.3vw;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background:#249c9c;
+    text-transform:uppercase;
+    width:100%;
+    height:3.5vw;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    
+}
+
+section #squad2 #f_quad2{
+    display: flex;
+    position: relative;
+    width: 100%;
+    height: 30vw;
+}
+
+section #squad2 a.btn_c,
+section #squad1 a.btn_c{
+    color: white;
+    font-size: 1.3vw;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background:#00b16f;
+    text-transform:uppercase;
+    width:100%;
+    height:3.5vw;
+    margin-top: 3vw;
+    cursor:pointer;
+    border: none;
+    border-radius: 0.3vw;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    transition:0.3s ease-out;
+    
+}
+section #squad2 a.btn_c:hover,
+section #squad1 a.btn_c:hover{
+    background:#7cddc5;
+}
+
+section #squad1{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1vw;
+}
+
+section #squad1 #seleciona{
+    width: 100%;
+    height: 25.984vw;
+    background-color: white;
+    /* margin-top: -3.4vw; */
+    cursor: pointer;
+    font-size: 20vw;
+    display: flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items: center;
+    color:#dddddd;
+    transition:0.2s ease-in-out;
+}
+
+section #squad1 > a{
+    margin-top: 6vw !important;
+}
+
+section #squad1 #seleciona:hover{
+    color: #249c9c;
+}
+
+/* Section Meio */
+
+/* --progress bar */
+/*progress Bar*/
+header .content4{
+	position:relative;
+	width:39.682539682539684vw;
+	height: 80%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+}
+
+
+header .content4 .skills{
+	position:relative;
+	display:flex;
+	border-radius:0.6349206349206349vw;
+	overflow: hidden;
+	transition:0.5s;
+	min-width: 46vw;
+}
+
+header .content4 .skills::before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:0;
+	width:100%;
+	height: 50%;
+	background:rgba(255,255,255,.1);
+	z-index:10;
+}
+
+header .content4 .skills .Name{
+	position:relative;
+	width:8.73015873015873vw;
+	text-align:right;
+	color:black;
+	margin-top:-0.15873015873015872vw;
+	text-transform:uppercase;
+	font-size: 1.2vw;
+
+}
+header .content4 .skills .Value{
+	position:relative;
+	width:3.1746031746031744vw;
+	text-align:left;
+	color:black;
+	margin-top:-0.15873015873015872vw;
+	text-transform:uppercase;
+	font-size: 1.2vw;
+
+}
+
+header .content4 .skills .percent{
+	position:relative;
+	width:calc(100% - 11.9047619047619vw);
+	height:1.5873015873015872vw;
+	margin: 0 0.7936507936507936vw;
+	border-radius:0.7936507936507936vw;
+	background: #151515;
+	box-shadow: inset 0 0  0.7936507936507936vw #000;
+	overflow: hidden;
+}
+
+header .content4 .skills .percent .progress{
+	position:relative;
+	top:0;
+	left:0;
+	width: 70%;
+	height: 100%;
+	border-radius:0.7936507936507936vw;
+	background:#50ae55;
+	box-shadow: inset 0 0 0.15873015873015872vw #000;
+	animation: animateprogress 1s ease-in-out forwards;
+}
+
+:root {
+	--largura-bg: 0%;
+}
+
+@keyframes animateprogress{
+	from{
+		width: var(--largura-bg);
+	}
+}
+
+/* --progress bar */

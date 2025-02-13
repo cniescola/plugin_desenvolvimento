@@ -1,0 +1,148 @@
+.container1 .section1{
+    display:flex;
+    flex-direction:row;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container1 .section1 > div{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 100%;
+    padding: 0 2vw 3vw 2vw;
+}
+
+.container1 .section1 > div .texto{
+    font-size: 1.5vw;
+    background: #50aea1;
+    width: 100%;
+    height: 4vw;
+    min-height: 4vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+}
+
+.container1 .section1 > div .campos{
+    display: flex;
+    flex-direction:column;
+    width: 100%;
+    height: 100%;
+    overflow-y:overlay;
+    overflow-x:hidden;
+}
+.container1 .section1 > div .campos > div{
+    display: flex;
+    flex-direction:row;
+    width: 100%;
+    padding-top: 1vw;
+}
+
+.container1 .section1 > div .campos > div input{
+    width: 100%;
+    height: 3.3vw;
+    border: none;
+    text-align: left;
+    font-size: 1.5vw;
+    font-family: serif;
+    padding-left: 2vw;
+    color: #4e5c5c;
+    box-shadow: 1px 1px 1px #bbbbbb;
+    background-color: white;
+    outline: none;
+    border: none;
+    transition: 0.3s;
+}
+
+.container1 .section1 > div .campos > div input:focus{
+    border: 1px solid #83bdafd1;
+}
+
+.container1 .section1 > div .campos > div #botao{
+    width: 10%;
+    height: 3.3vw;
+    border: none;
+    text-align: left;
+    font-size: 2.5vw;
+    font-family: serif;
+    color: #249c9c;
+    box-shadow: 1px 1px 1px #bbbbbb;
+    background-color: white;
+    margin-left: 0.1vw;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    font-weight: 900;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.container1 .section1 > div .campos > div #botao:hover{
+    background-color:#83bdafd1;
+    color: white;
+}
+
+.container1 .section1 > div .campos > div input::placeholder{
+    color: #b3c2c2;
+}
+
+
+
+.container1 a.botao{
+    color: white !important;
+    height: 4vw;
+    min-height: 4vw;
+    width: 89%;
+    font-size: 1.5vw;
+    background: #7e7c9d;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container1 .botao:hover{
+    background: #73b5a6d1;
+    cursor: pointer;
+}
+
+#print2{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: #060606a8;
+    display: none;
+    opacity: 0%;
+    justify-content:center;
+    align-items:center;
+    padding: 10.9vw 7.6vw 6.5vw 2.5vw;
+    transition: 0.5s;
+}
+
+#print2 > div{
+    width: 100%;
+    height: 100%;
+    background-color: #000000c4;
+    display: flex;
+    flex-direction: column-reverse;
+    padding:0 2vw 0 2vw;
+    overflow:overlay;
+    border: 6px solid #47dd4c;
+}
+
+
+#print2 > div > div p{
+    margin:0px !important;
+    color: white;
+    font-size: 0.9vw;
+    font-family: monospace;
+}

@@ -1,0 +1,185 @@
+.principal{
+    width: 100%;
+    display: flex;
+    flex-direction:column;
+    align-items:center;
+}
+.principal .category_select{
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	overflow-y:scroll;
+	/*overflow-x: scroll; */
+	border: .1vw solid royalblue;
+	background: white;
+}
+
+.principal .category_select ul{
+	margin:  0;
+	padding: 0;
+	width: 100%;
+	position: relative;
+}
+
+.principal .category_select ul > ul{
+	padding-left:1vw;
+}
+
+.principal .category_select ul li{
+	list-style:none;
+	padding-left:1vw;
+}
+
+.principal .category_select ul label{
+	display:flex;
+	flex-direction:row;
+	justify-content:start;
+	align-items:center;
+	margin:0;
+	font-size: 1.2vw;
+}
+
+.principal .category_select ul label:hover{
+	background:#cfd9f7;
+}
+
+.principal .category_select ul input[type="checkbox"]{
+	/*display: none;*/
+	height: 1vw;
+	width: 1vw;
+}
+
+.principal .category_select ul span.list{
+	position:relative;
+	display: inline-block;
+	overflow:hidden;
+	padding: 0 .36vw;
+	padding-left:.4vw;
+	transition: 0.5s;
+
+	transition-delay:0.5s;
+}
+
+.principal .category_select ul input[type="checkbox"]:checked ~ span.list{
+	color: royalblue;
+	transition-delay:0s;
+}
+
+
+.principal .category_select ul  span.list:before{
+	content:'';
+	position:absolute;
+	top:0;
+	left:-100%;
+	width:100%;
+	height:100%;
+	transition: 0.5s;
+	background: royalblue;
+	transition-delay: 0.5s;
+}
+
+.principal .category_select ul  input[type="checkbox"]:checked ~ span.list:before{
+	left:100%;
+	transition-delay: 0s;
+}
+
+
+.principal .category_select ul  span.list:after{
+	content:'';
+	position:absolute;
+	top:50%;
+	left:0;
+	background: #000;
+	width:100%;
+	height:0.14vw;
+	transform-origin: left;
+	transform: scaleX(0);
+	transition: 0.5s;
+	transition-delay: 0s;
+}
+
+.principal .category_select ul  input[type="checkbox"]:checked ~ span.list:after{
+	
+	transform: scaleX(1);
+	transition-delay: 0.5s;
+}
+
+/* paginaçao */
+.principal .paginacao,
+.principal .paginacao{
+	display: flex;
+	flex-direction:row;
+	justify-content: center;
+	align-items: center;
+	width:100%;
+	height: 3vw;
+	padding: 1vw;
+	font-size: 1vw;
+	margin-top:1vw;
+	overflow: hidden;
+}
+
+
+.principal .paginacao button,
+.principal .paginacao button{
+	border: none;
+	min-width: 5vw;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #2c98f0;
+	color: white;
+	text-shadow: 2px 2px 0px #0000005c;
+	margin-left: 0.5vw;
+	margin-right: 0.5vw;
+	height: 3vw;
+	box-shadow: 1px 1px 1px #0000006b;
+	cursor: pointer;
+}
+.principal .paginacao button:focus,
+.principal .paginacao button:focus{
+	border: none;
+	outline: none;
+
+}
+
+.principal .paginacao button:hover,
+.principal .paginacao button:hover{
+	background: #2c98f08f;
+}
+
+.principal .paginacao .buttons_click,
+.principal .paginacao .buttons_click{
+	width: 100%;
+	height: 3vw;
+	display:flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	overflow: auto;
+}
+.principal .paginacao .buttons_click::-webkit-scrollbar,
+.principal .paginacao .buttons_click::-webkit-scrollbar{
+	width: 0;
+	height: 6px;
+}
+.principal .paginacao .buttons_click::-webkit-scrollbar-thumb,
+.principal .paginacao .buttons_click::-webkit-scrollbar-thumb {
+	background: #fd9827;
+	height: 2px;
+}
+
+.principal .paginacao .buttons_click button,
+.principal .paginacao .buttons_click button{
+	min-width: 3vw;
+	margin-bottom: 2px;
+}
+.catAlment{
+	height: 30vw !important;
+}
+
+.activebutton{
+	background: #f08f2c !important;
+}

@@ -1,0 +1,211 @@
+.painel > form{
+    height: 100%;
+    width:100%;
+    background-color: #e0e8f5;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    padding:2.5vw;
+}
+
+.painel .container1{
+    width: 100%;
+    padding: 5vw;
+    border: 1px solid #50ae5540;
+    box-shadow: 2px 2px 7px 0px #9797975e;
+
+}
+
+.painel .container1 > div{
+    width: 100%;
+    height: 15vw;
+    display: flex;
+    flex-direction:row;
+
+}
+
+.painel .container1 > div > div{
+    width: 50%;
+    height:100%;
+    display: flex;
+    
+    
+}
+.painel .container1 > div > div:nth-child(1){
+    justify-content: flex-start;
+    align-items:center;
+    flex-direction:row;
+}
+.painel .container1 > div > div:nth-child(2){
+    justify-content: flex-end;
+    align-items:center;
+    flex-direction:row;
+}
+
+/* Editando quadrado que adiciona planilha */
+.painel .container1 >div > .sq_right > label:nth-child(1){
+    width: 40%;
+    height: 100%;
+    border-radius: 2vw;
+    background-color: #ffffff52;
+    box-shadow: 3px 3px 5px 0px #d0d8e5, -2px -2px 0px 0px #ffffff8a;
+    color:#50ae55a8;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.painel .container1 >div > .sq_right > label:nth-child(1):hover{
+    background-color: #e0e8f5;
+    color:#a2c5a4a8;
+}
+
+.painel .container1 > div span{
+    font-size: 5vw;
+    height: 100%;
+}
+
+.painel .container1 > div span ion-icon{
+    display: inline;
+}
+
+.painel .container1 div input#arquivoExcel{
+    display: none;
+}
+
+
+.painel .container1 >div > .sq_right > label:nth-child(2){
+    min-width: 40%;
+    max-width: 60%;
+    height: 95%;
+    border-radius: 2vw;
+    box-shadow: 3px 3px 5px 0px #d0d8e5, -2px -2px 0px 0px #ffffff8a;
+    color:grey;
+    display: none;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    overflow: hidden;
+    
+}
+.painel .container1 >div > .sq_right > label:nth-child(2) > div{
+    width: 100%;
+    height: 100%;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    padding:2vw;
+}
+
+.painel .container1 >div > .sq_right > label:nth-child(2) > div > p{
+    margin:0px !important;
+}
+
+.painel .container1 >div > .sq_right > label:nth-child(2) img{
+    max-height: 100%;
+}
+
+/* Editando quadrado que adiciona planilha*/
+
+.painel > form .container2{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3vw 5vw 0vw 5vw;
+}
+
+.painel > form .container2 .btn{
+    color:white;
+    height: 4vw;
+    width: 100%;
+    font-size: 1.5vw;
+    background: #7e7c9d;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.painel > form .container2 .btn:hover{
+    background-color: #73b5a6d1;
+}
+
+/* Editando botao fazer upload de planilha */
+
+
+/* loading de carregamento do cadastro */
+.container1 .sq_left .load1{
+	position: relative;
+	width: 24.449877750611247vw;
+	height: 24.449877750611247vw;
+	min-width: 24.449877750611247vw;
+	min-height: 24.449877750611247vw;
+	margin-right: 4vw;
+	border-radius: 1.2224938875305624vw;
+	display: none;
+	align-items: center;
+	justify-content: center;
+}
+
+.container1 .sq_left .load1:nth-child(3){
+	margin-right: 0;
+	margin-left: 4vw;
+}
+
+.container1 .sq_left .load1 .loader{
+	position: absolute;
+	width: 12.224938875305623vw;
+	height: 12.224938875305623vw;
+	border-radius: 50%;
+	background: linear-gradient(45deg, #4187f65c,#7e7c9d63 40%, #50ae55d9);
+	animation: animate2 2s linear infinite;
+}
+
+@keyframes animate2{
+	0%
+	{
+		transform: rotate(0deg);
+		}100%
+		{
+			transform: rotate(360deg);
+		}
+	}
+
+	.container1 .sq_left .load1 .loader::before{
+		content:'@';
+		position: absolute;
+		top: 0.4889975550122249vw;
+		left: 0.4889975550122249vw;
+		right: 0.4889975550122249vw;
+		bottom: 0.4889975550122249vw;
+        background: #e0e8f5;
+		border-radius: 50%;
+		z-index: 4;
+        color: #6a7ee7;
+	}
+
+    .container1 .sq_left .load1 .loadcont::before{
+        content: ''!important;
+    }
+
+	.container1 .sq_left .load1 .loader::after{
+		content:'';
+		position: absolute;
+		top: 0px;
+		left: 0px;
+		right: 0px;
+		bottom: 0px;
+		background: linear-gradient(45deg, #e55ae7de,#3478ddd9 40%, #0e9919);
+		border-radius: 50%;
+		z-index: 4;
+		z-index: 1;
+		filter: blur(2.444987775061125vw);
+	}
+    .container1 .sq_left .load1 > p{
+        z-index: 1;
+        color: green;
+        margin: 0px;
+    }
+/* loading de carregamento do cadastro */

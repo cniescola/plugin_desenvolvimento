@@ -1,0 +1,37 @@
+.container1 .section1{
+    width: 100%;
+    border: 1px solid #50ae5540;
+    box-shadow: 2px 2px 7px 0px #9797975e;
+    min-height:25vw;
+    margin-bottom:3vw;
+    overflow: overlay;
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+.container1 .section1 > div > p{
+    margin:0px !important;
+    font-size: 0.9vw;
+    font-family: monospace;
+}
+
+.container1 a.botao{
+    color: white !important;
+    height: 4vw;
+    min-height: 4vw;
+    width: 89%;
+    font-size: 1.5vw;
+    background: #7e7c9d;
+    text-align: center;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    transition: 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container1 .botao:hover{
+    background: #73b5a6d1;
+    cursor: pointer;
+}
