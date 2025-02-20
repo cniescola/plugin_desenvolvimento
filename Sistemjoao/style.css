@@ -4,18 +4,11 @@ body{
     flex-direction: column;
 }
 
-section{
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    width: 100vw;
-}
-
 nav #titulo{
     display: flex;
     box-shadow: 0 2px 5px 0;
     background-color: white;
-    width: 100%;
+    width: 100vw;
     padding: 10px;
 }
 
@@ -27,6 +20,51 @@ nav #titulo p{
     text-transform: uppercase;
 }
 
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
 #verde{
-    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    background-color: green;
+    width: 100vw;
+}
+
+#verde p{
+    padding: 15px;
+    margin: 0;
+    color: white;
+}
+
+#cinza p{
+    padding: 10px;
+    margin: 0;
+
+    color: white;
+}
+
+#cinza{
+    display: flex;
+    margin: 35px;
+    justify-content: center;
+    align-items: center;
+    background-color: grey;
+    width: 100%;
+}
+
+#add{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 2px 5px 0;
 }
