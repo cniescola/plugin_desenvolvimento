@@ -1,0 +1,35 @@
+body{
+    width: 100%;
+    height: 100vh;
+    padding:0;
+    margin:0;
+
+}
+
+#navigator{
+    display: flex;
+    width: 50px;
+    height: 100%;
+    background:#2b343b;
+    transition:0.5s;
+    position: relative;
+}
+
+#navigator:hover{
+    width: 300px;
+}
+
+#navigator::after{
+    content: '';
+    width: 10px;
+    height: 100%;
+    background-color:#4187f6;
+    position: absolute;
+    right: 0;
+}
+
+#navigator ul li{
+    list-style: none;
+    color: white;
+}
+
