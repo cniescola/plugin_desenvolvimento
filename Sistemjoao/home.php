@@ -7,14 +7,26 @@
     <link rel="stylesheet" href="stylehome.css">
 </head>
 <body>
-    <section>
-        <div id="background">
-            <div id="titulo">
-                <p>
-                    SISTEMA DE CADASTRO DE ALTERAÇÕES EM MASSA
-                </p>
+    <header>
+        <nav>
+            <div id="barralat">
+                <div id="barralat2">
+                </div>
             </div>
-        </div>
-    </section>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <div id="background">
+                <div id="titulo">
+                    <p>
+                        SISTEMA DE CADASTRO DE ALTERAÇÕES EM MASSA
+                    </p>
+                </div>
+        </section>        
+    </main>
+    
+    <footer></footer>
 </body>
 </html>
